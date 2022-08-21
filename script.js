@@ -1,11 +1,12 @@
-
+const output = document.querySelector('.output');
+output.innerHTML = '';
 
 let numberToCheck = parseInt(prompt("Enter the number you want to check: "));
 let score = 0;
 
 function primePrinter(number, score) {
     let primeNumber
-    
+    const para = document.createElement('p');
     for (i = 2; i <= number; i++) {
         if (number%i === 0) {
         score = ++score;
@@ -13,12 +14,20 @@ function primePrinter(number, score) {
     }
     if (score === 1) {
     console.log(number);
+    para.textContent = number;
     }
+    output.appendChild(para);
 }
 
+
+
 for (let j = 2; j <= numberToCheck; j++) {
-    console.log(primePrinter(j, score))
+    console.log(primePrinter(j, score));  
 }
+
+
+
+
 
 /*
 number = 6
