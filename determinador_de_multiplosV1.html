@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number Generator</title>
+</head>
+<body>
+    <script>
+        /* let answer = parseInt(prompt("Please enter the number you would like to print Prime Numbers up to: ")); */
+        let answer = 98;
+
+        for (let i = 2; i <= answer; i++) {
+          if ((answer % i === 0) && (answer !== i)) {
+              console.log(i); 
+          }
+        }
+    </script>
+</body>
+</html>

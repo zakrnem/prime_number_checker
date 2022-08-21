@@ -1,0 +1,4 @@
+se define un número
+se procede a calcular el remainder con todos los números hasta ese valor
+    pero esta serie debe comenzar despues de 1
+si el remainder es cero es un número primo
