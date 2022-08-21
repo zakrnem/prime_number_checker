@@ -14,7 +14,7 @@ function primePrinter(number, score) {
     }
     if (score === 1) {
     console.log(number);
-    para.textContent = number;
+    para.textContent = number + "_";
     }
     output.appendChild(para);
 }
